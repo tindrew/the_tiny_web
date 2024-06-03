@@ -1,0 +1,18 @@
+{% extends "user/navbar.html" %}
+
+
+{% block content %}
+
+
+<h3>Update Article</h3>
+<br>
+
+<form method="POST" autocomplete="off">
+    {% csrf_token %}
+    {{ UpdateArticleForm | safe }}
+
+    <input type="submit" value="Update Article">
+    
+</form>
+
+{% endblock %}

@@ -1,0 +1,23 @@
+{% extends "user/navbar.html" %}
+
+
+{% block content %}
+
+
+<h3>Update Account Details</h3>
+<br>
+
+<form method="POST" autocomplete="off">
+    {% csrf_token %}
+    {{ UpdateUserForm | safe }}
+
+    <input type="submit" value="Update">
+    
+</form>
+
+<div>
+    <a href="{% url 'delete-account' %}">Delete your account</a>
+</div>
+
+
+{% endblock %}

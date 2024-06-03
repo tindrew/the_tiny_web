@@ -1,0 +1,29 @@
+{% extends 'user/navbar.html' %}
+{% load static %}
+{% block title %}
+    Dashboard
+{% endblock %}
+
+{% block content %}
+    <h1> Dashboard </h1>
+
+   <content class="dashboard-intro">
+
+        <h5> Welcome, {{ user.first_name }} 👋 </h5>
+
+   </content>
+
+    {% csrf_token %} 
+    
+    
+
+{% endblock %}
+
+
+
+
+
+    
+
+
+

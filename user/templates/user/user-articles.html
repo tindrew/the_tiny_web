@@ -1,0 +1,42 @@
+{% extends 'user/navbar.html' %}
+
+
+{% block content %}
+
+<br>
+<div class="user-articles">
+<h3>My Articles</h3>
+
+{% for article in AllArticles %}
+
+    <div class="user-articles">
+        <h4>{{ article.title | safe }}</h4>
+
+        <p>{{ article.content|safe }}</p>
+        <br>
+        <p>{{ article.created_at }}</p> 
+
+        <br> <br>
+
+        <a href="{% url 'update-article' article.id %}">Update Article</a>
+
+        <br>
+
+        <a href="{% url 'delete-article' article.id %}">Delete Article</a>
+
+    </div>
+
+    <br>
+
+{% endfor %}
+
+</div>
+
+{% endblock %}
+
+
+
+
+
+
+

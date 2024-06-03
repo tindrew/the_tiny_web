@@ -1,0 +1,26 @@
+{% extends "user/navbar.html" %}
+
+
+{% block content %}
+
+
+<h3>Create An Article</h3>
+<br>
+
+<form method="POST" autocomplete="off">
+    {% csrf_token %}
+
+
+    {{ CreateArticleForm.as_p | safe }}
+
+    <input type="submit" value="Create Article">
+    
+</form>
+
+{% endblock %}
+
+
+
+
+
+

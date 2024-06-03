@@ -1,0 +1,25 @@
+{% extends "user/navbar.html" %}
+
+
+{% block content %}
+
+
+<h3>Delete article</h3>
+<br>
+
+<form method="POST" autocomplete="off">
+    {% csrf_token %}
+
+    
+
+    <input type="submit" value="Delete Article">
+
+    <br>
+
+    <a href="{% url 'user-articles' %}">Return to articles</a>
+
+
+    
+</form>
+
+{% endblock %}

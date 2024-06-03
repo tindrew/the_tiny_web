@@ -1,0 +1,29 @@
+{% extends "user/navbar.html" %}
+
+
+{% block content %}
+
+
+<h3>Delete Account</h3>
+<br>
+
+<p>Are you sure you want to delete your account?</p>
+
+<br>
+
+<form method="POST" autocomplete="off">
+    {% csrf_token %}
+
+    
+
+    <input type="submit" value="Delete Account">
+
+    <br>
+
+    <a href="{% url 'user-login' %}">Return to login</a>
+
+
+    
+</form>
+
+{% endblock %}

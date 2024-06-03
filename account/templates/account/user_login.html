@@ -1,0 +1,19 @@
+
+{% extends 'account/base.html' %}
+
+{% block title %}
+    HOME
+{% endblock %}
+
+{% block content %}
+    <h1> Login Page </h1>
+
+    <form method="POST" autocomplete="off">
+    {% csrf_token %} 
+    
+    {{ LoginForm.as_p }} 
+
+    <input type="submit" value="Login">
+
+    </form>
+{% endblock %}
