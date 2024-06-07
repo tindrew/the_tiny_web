@@ -28,6 +28,9 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+MARKDOWNX_EDITOR_RESIZABLE = False
+
+
 
 # Application definition
 
@@ -41,7 +44,8 @@ INSTALLED_APPS = [
     
     'account',
     'user',
-    'django_summernote',    
+    'djrichtextfield',
+    'markdownx',
 ]
 
 
@@ -77,6 +81,18 @@ TEMPLATES = [
         },
     },
 ]
+
+
+DJRICHTEXTFIELD_CONFIG = {
+    'js': ['//cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js'],
+    'init_template': 'djrichtextfield/init/tinymce.js',
+    'settings': {
+        'menubar': False,
+        'plugins': 'link image',
+        'toolbar': 'bold italic | link image | removeformat',
+        'width': 700
+    }
+}
 
 WSGI_APPLICATION = 'tinyweb.wsgi.application'
 
@@ -138,3 +154,5 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')

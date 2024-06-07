@@ -1,57 +1,55 @@
 /****** General ******/
+
+:root {
+  margin: auto;
+}
+
 body {
-    margin: 0;
-    padding: 0;
+   
+    background-color: rgb(41, 41, 41); 
+
+    margin: auto;
+    padding: 20px;
+    max-width: 720px;
+    text-align: left;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    line-height: 1.5;
 }
 
 .body-content {
     padding: 20px;
-    background-color: #f8f8f8;
-}
+    color: rgb(197, 135, 0);
+  }
 
 
 
 
 /****** Navbar ******/
 
-
-
 .navbar {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    background-color: #f8f8f8;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
 
-  }
+.navbar ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
 
-  
-  
-  .navbar h1 {
-    margin: 0;
-    font-size: 2rem;
-    color: #333;
-    
-  }
-  
-  .navbar ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-  }
-  
-  .navbar ul li {
-    margin-right: 20px;
-  }
-  
-  .navbar ul li a {
-    text-decoration: none;
-    color: #333;
-  }
+.navbar li {
+  margin-right: 1rem;
+  margin-bottom: 0.5rem;
+}
 
-
+.navbar a {
+  color: rgb(197, 135, 0);  
+  text-decoration: none;
+}
   
 
   
@@ -64,12 +62,14 @@ body {
  /****** user-articles ******/
 
  .user-articles {
-  color:blue;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 200px 10px 200px;
-  background-color: #f8f8f8;
-
+  border : 1px solid rgb(197, 135, 0);
+  background-color: rgb(41, 41, 41);
+  color: rgb(197, 135, 0); 
+  padding: 20px; 
  }
+
+ .user-articles hr {
+  border : 1px solid rgb(197, 135, 0);
+ }
+
+ 

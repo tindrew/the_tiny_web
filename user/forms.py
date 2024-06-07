@@ -1,21 +1,19 @@
 from django import forms
 from . models import Article
 from account.models import CustomUser
-
 from django.forms import ModelForm
 
 
 
 
 class ArticleForm(ModelForm):
-    
     class Meta:
         model = Article
-        fields = ['title', 'content', ]
-        widgets = {
-            'content': forms.
-            Textarea(attrs={'class': 'summernote'}),
-        }
+        # fields = ['title', 'content']
+        fields = '__all__'
+        
+
+    
         
 class UpdateUserForm(ModelForm):
     

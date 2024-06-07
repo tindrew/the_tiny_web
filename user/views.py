@@ -8,7 +8,10 @@ from . models import Article
 
 from account.models import CustomUser
 
+from django.views.generic import DetailView
 
+class MarkdownDetailView(DetailView):
+    model = Article
 
 @login_required
 def user_dashboard(request):
@@ -66,6 +69,7 @@ def update_article(request, pk):
     
     
     form = ArticleForm(instance=article)
+    # In a view or controller
     
     if request.method == 'POST':
         
