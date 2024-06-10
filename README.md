@@ -13,15 +13,25 @@ The Tiny Web will operate on a freemium model, free to write text blogs with a s
 
 ### Roadmap
 
-[x] User Creation and Login
-[x] Create edit and delete posts
-[] Add markdwon capability to the writing form
+#### General
+[X] Add markdown capability to the writing form
+
+#### Users
+[X] User Creation and Login
+[X] Create, edit, and delete posts
+
+#### Readers
+[] view any blog's home page
+[] Read posts wihout logging in
+[] 
+[]
 [] Add a Read Posts/Discover page
+
+
+#### Subscribers
 [] Add images to posts
 [] Add subscription
-[] Users can add a custom domain
-
-### Possible Features
-
-- users can download their blogposts as markdown files
-- Some form of analytics
+[] Allow users to download their blogposts as markdown files
+[] custom domains
+[] My articles should show the title of each post, not the whole post
+[] clicking on the title of the post should open an article page that shows the whole thing
