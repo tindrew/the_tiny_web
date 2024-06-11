@@ -43,11 +43,10 @@ def create_article(request):
     
     return render(request, 'user/create-article.html', context)
 
-
 @login_required(login_url='user-login')
 def user_articles(request):
     
-    current_user = request.user.id
+    # current_user = request.user.id
     
     # article = Article.objects.all().filter(user_id=current_user)
     articles = Article.objects.filter(user=request.user)

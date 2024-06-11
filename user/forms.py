@@ -9,8 +9,8 @@ from django.forms import ModelForm
 class ArticleForm(ModelForm):
     class Meta:
         model = Article
-        # fields = ['title', 'content']
-        fields = '__all__'
+        fields = ['title', 'content']
+        #fields = '__all__'
         
 
     

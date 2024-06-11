@@ -2,14 +2,21 @@ from django.shortcuts import render, redirect
 from . forms import CreateUserForm
 
 from django.contrib.auth.forms import AuthenticationForm
-
+from user.models import Article
 from django.contrib.auth import authenticate, login, logout
-
 from django.http import HttpResponse
+
 
 def home(request):
     
     return render(request, 'account/index.html')
+
+
+def discover(request):
+    article = Article.objects.all()
+    
+    context = {'AllArticles': article}
+    return render(request, 'account/discover.html', context)
 
 
 def register(request):
@@ -24,7 +31,7 @@ def register(request):
             
             form.save()
             
-            return redirect('user_login')
+            return redirect('user-login')
     
     context = {'RegisterForm': form}
     

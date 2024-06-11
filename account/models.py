@@ -23,4 +23,9 @@ class CustomUser(AbstractBaseUser, PermissionsMixin):
     
     def __str__(self):
         return self.email
+    
+    
+    class DiscoverArticles(models.Model):
+        title = models.CharField(max_length=100)
+
 

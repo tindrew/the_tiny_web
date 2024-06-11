@@ -1,0 +1,18 @@
+
+{% extends 'account/base.html' %}
+
+{% block title %}
+    Discover
+{% endblock %}
+
+{% block content %}
+    <h1>Discover New Authors</h1>
+    <ul>
+        {% for article in AllArticles %}
+            <li>
+                <h2>{{ article.title }}</h2>
+            </li>
+        {% endfor %}
+    </ul>
+
+{% endblock %}
