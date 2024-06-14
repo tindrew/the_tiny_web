@@ -1,0 +1,15 @@
+{% extends 'account/base.html' %}
+
+{% block content %}
+<div class="user-articles">
+
+<h1>{{ article.title }}</h1>
+<p>{{ article.created_at }}</p>
+<p>By: {{ article.user.first_name }} {{ article.user.last_name }}</p>
+<hr>
+
+{{ article.formatted_markdown | safe }}
+
+<br>
+
+{% endblock %}

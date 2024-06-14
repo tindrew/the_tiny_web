@@ -1,20 +1,30 @@
 /****** General ******/
-
 :root {
+  --width: 800px;
+  --font-main: Verdana, sans-serif;
+  --font-secondary: Verdana, sans-serif;
+  --font-scale: 1em;
+  --background-color: #fff;
+  --heading-color: #222;
+  --text-color: #444;
+  --link-color: #3273dc;
+  --visited-color:  #8b6fcb;
+  --code-background-color: #f2f2f2;
+  --code-color: #222;
+  --blockquote-color: #222;
   margin: auto;
 }
 
 body {
-   
-    background-color: rgb(41, 41, 41); 
-
-    margin: auto;
-    padding: 20px;
-    max-width: 720px;
-    text-align: left;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-    line-height: 1.5;
+  max-width: var(--width); 
+  background-color: rgb(41, 41, 41); 
+  margin: auto;
+  padding: 20px;
+  max-width: 720px;
+  text-align: left;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  line-height: 1.5;
 }
 
 .body-content {
@@ -31,6 +41,8 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  max-width: var(--width); 
+  margin-bottom: 50px;
 }
 
 .navbar ul {
@@ -68,8 +80,24 @@ body {
   padding: 20px; 
  }
 
+
+
  .user-articles hr {
   border : 1px solid rgb(197, 135, 0);
+ }
+
+ .user-articles li {
+  list-style: none;
+ }
+
+ .user-articles a {
+  color: rgb(197, 135, 0);  
+  text-decoration: none;
+ }
+
+ .user-articles a:hover {
+  color: rgb(197, 135, 0);  
+  text-decoration: underline;
  }
 
  /****** Discover ******/
@@ -180,3 +208,6 @@ body {
   outline: none;
 }
  
+
+
+

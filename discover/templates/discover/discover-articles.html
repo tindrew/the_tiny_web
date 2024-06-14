@@ -10,7 +10,7 @@
     <ul>
         {% for article in AllArticles %}
             <li>
-                <h3>{{ article.title }} | Written by: {{ article.user.first_name }}</h3>
+                <h3><a href="{% url 'discover-article-detail' article.id %}">{{ article.title }} | Written by: {{ article.user.first_name }}</h3></a>
                 <p><p>
             </li>
         {% endfor %}

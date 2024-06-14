@@ -1,0 +1,16 @@
+{% extends 'user/navbar.html' %}
+
+{% block content %}
+<div class="user-articles">
+<h1>{{ article.title }}</h1>
+<p>{{ article.created_at }}</p>
+<hr>
+
+{{ article.formatted_markdown | safe }}
+
+<br>
+<a href="{% url 'update-article' article.id %}">Update Article</a>
+<br>
+<a href="{% url 'delete-article' article.id %}">Delete Article</a>
+</div>
+{% endblock %}

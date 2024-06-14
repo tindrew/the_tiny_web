@@ -10,5 +10,6 @@ urlpatterns = [
     path('delete-article/<str:pk>', views.delete_article, name='delete-article'),
     path('account-management/', views.account_management, name='account-management'),
     path('delete-account/', views.delete_account, name='delete-account'),
+    path('article/<int:article_id>/', views.article_detail, name='article-detail'),
 
 ]

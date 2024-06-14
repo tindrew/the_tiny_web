@@ -139,6 +139,10 @@ def delete_account(request,):
     
     return render(request, 'user/delete-account.html')
         
-    
+@login_required(login_url='user-login')
+def article_detail(request, article_id):
+    article = Article.objects.get(pk=article_id)
+    context = {'article': article}
+    return render(request, 'user/article-detail.html', context)
     
             

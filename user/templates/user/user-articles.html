@@ -7,8 +7,9 @@
 <h3>My Articles</h3>
 
 {% for article in AllArticles %}
+<div class="user-articles">
 
-    <div class="user-articles">
+    {% comment %} <div class="user-articles">
         
         <h1>{{ article.title }}</h1>
         {{ article.created_at }}
@@ -30,9 +31,14 @@
     </div>
    
 
-    <br>
+    <br> {% endcomment %}
+
     
+        <a href="{% url 'article-detail' article.id %}">{{ article.title }} - {{ article.created_at }}</a>
+    
+    </div>
 {% endfor %}
+    
 
 
 {% endblock %}

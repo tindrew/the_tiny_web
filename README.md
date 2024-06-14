@@ -15,20 +15,21 @@ The Tiny Web will operate on a freemium model, free to write text blogs with a s
 
 #### General
 - [x] Add markdown capability to the writing form
+- [ ] Adjust the size of the writing form
 
 #### Users
 - [x] User Creation and Login
 - [x] Create, edit, and delete posts
-- [ ] My articles should show the title of each post, not the whole post
-- [ ] clicking on the title of the post should open an article page that shows the whole article and allow editing
+- [x] My articles should show the title of each post, not the whole post
+- [x] clicking on the title of the post should open an article page that shows the whole article and allow editing
 
 #### Readers
 - [ ] view any blog's home page
-- [ ] Read posts wihout logging in
+- [x] Read posts wihout logging in
 - [x] Add a rudimentary Discover page
 - [ ] each post on Discover should show the title, author, and date
 - [x] Make post titles clickable
-- [ ] Clicking a title should open the article
+- [x] Clicking a title should open the article
 
 #### Subscribers
 - [ ] Add images to posts
