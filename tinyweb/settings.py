@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     
     'account',
     'user',
+    'discover',
     'djrichtextfield',
     'markdownx',
 ]

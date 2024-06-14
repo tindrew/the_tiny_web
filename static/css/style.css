@@ -72,4 +72,111 @@ body {
   border : 1px solid rgb(197, 135, 0);
  }
 
+ /****** Discover ******/
+
+ .discover-list {
+  border : 1px solid rgb(197, 135, 0);
+  background-color: rgb(41, 41, 41);
+  color: rgb(197, 135, 0); 
+  padding: 10px; 
+ }
+
+ .discover-list li {
+  list-style: none;
+ }
+
+ /****** Footer ******/
+
+ footer {
+    text-align: center;
+    color: rgb(197, 135, 0);
+ }
+
+
+
+
+
+ /****** Register Form ******/
+
+ .register-form {
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.register-form h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.register-form input[type="text"],
+.register-form input[type="email"],
+.register-form input[type="password"] {
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+}
+
+.register-form input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.register-form input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.register-form input[type="submit"]:active {
+  background-color: #3e8e41;
+}
+
+.register-form input[type="submit"]:focus {
+  outline: none;
+}
+
+/****** Login Form ******/
+
+.login-form {
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.login-form h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.login-form input[type="text"],
+.login-form input[type="email"],
+.login-form input[type="password"] {
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+}
+
+.login-form input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.login-form input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.login-form input[type="submit"]:active {
+  background-color: #3e8e41;
+}
+
+.login-form input[type="submit"]:focus {
+  outline: none;
+}
  

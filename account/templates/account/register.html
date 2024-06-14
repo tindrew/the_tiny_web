@@ -8,10 +8,10 @@
 {% block content %}
     <h1> Register Page </h1>
 
-    <form method="POST" autocomplete="off">
+    <form method="POST" class="register-form" autocomplete="off">
     {% csrf_token %} 
     
-    {{ RegisterForm.as_p }} 
+    {{ RegisterForm }} 
 
     <input type="submit" value="Register">
 {% endblock %}

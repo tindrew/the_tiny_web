@@ -8,7 +8,7 @@
 {% block content %}
     <h1> Login Page </h1>
 
-    <form method="POST" autocomplete="off">
+    <form method="POST" class="login-form" autocomplete="off">
     {% csrf_token %} 
     
     {{ LoginForm.as_p }} 
