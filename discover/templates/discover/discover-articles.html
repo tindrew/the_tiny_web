@@ -6,12 +6,18 @@
 {% block content %}
     <h1>Discover New Authors</h1>
 
+    <form id="search-form" action="{% url 'discover-articles' %}" method="GET">
+        <input type="text" id="search-query" name="search_query" placeholder="Search for articles...">
+        <button type="submit">Search</button>
+    </form>
     <div class="discover-list">
     <ul>
         {% for article in AllArticles %}
             <li>
-                <h4><a href="{% url 'discover-article-detail' article.id %}"><span class="article-info">{{ article.created_at }} </span>    {{ article.title }} | Written by: {{ article.user.first_name }}</h4></a>
+                <h4><a href="{% url 'discover-article-detail' article.id %}"><span class="article-info">{{ article.created_at }} </span>    {{ article.title }} - Written by: {{ article.user.first_name }}</h4></a>
             </li>
+
+
         {% endfor %}
     </ul>
     </div>

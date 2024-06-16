@@ -29,10 +29,10 @@ The Tiny Web will operate on a freemium model, free to write text blogs with a s
 - [ ] view any blog's home page
 - [x] Read posts wihout logging in
 - [x] Add a rudimentary Discover page
-- [ ] each post on Discover should show the title, author, and date
+- [X] each post on Discover should show the title, author, and date
 - [x] Make post titles clickable
 - [x] Clicking a title should open the article
-- [ ] Add a search bar
+- [X] Add a search bar
 - [ ] Add pagination to discover page
 
 #### Subscribers
