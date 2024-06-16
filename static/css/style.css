@@ -68,7 +68,13 @@ body {
 
 .navbar a {
   text-decoration: none;
+  color: var(--text-color)
 }
+
+.navbar a:hover {
+  color: rgb(197, 135, 0);  
+  text-decoration: underline;
+ }
   
 
   
@@ -76,18 +82,17 @@ body {
     font-size: xx-large;
  }
 
-
+ /****** create-articles ******/
+ .create-article {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
 
  /****** user-articles ******/
 
  .user-articles {
-  border : 1px solid rgb(197, 135, 0);
-
-  color: rgb(197, 135, 0); 
-  padding: 20px; 
- }
-
- .user-articles hr {
+  margin-bottom: 10px;
  }
 
  .user-articles li {
@@ -119,7 +124,7 @@ body {
 
  .discover-list a {
   text-decoration: none;
-  color: rgb(197, 135, 0); 
+  color: var(--text-color); 
  }
 
  .discover-list a:hover {
@@ -193,6 +198,28 @@ body {
 .register-form input[type="submit"]:focus {
   outline: none;
 }
+
+.create-article textarea {
+  background-color: #e6e6e6;
+  width: 100%;
+  height: 300px;
+}
+
+
+.create-article input[type="text"],
+.create-article textarea {
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  display: block;
+}
+
+.create-article input[type="text"] {
+  height: 40px;
+}
+
 
 /****** Login Form ******/
 
