@@ -22,6 +22,8 @@ The Tiny Web will operate on a freemium model, free to write text blogs with a s
 - [x] Create, edit, and delete posts
 - [x] My articles should show the title of each post, not the whole post
 - [x] clicking on the title of the post should open an article page that shows the whole article and allow editing
+- [ ] User can set a blog name
+
 
 #### Readers
 - [ ] view any blog's home page
@@ -30,6 +32,8 @@ The Tiny Web will operate on a freemium model, free to write text blogs with a s
 - [ ] each post on Discover should show the title, author, and date
 - [x] Make post titles clickable
 - [x] Clicking a title should open the article
+- [ ] Add a search bar
+- [ ] Add pagination to discover page
 
 #### Subscribers
 - [ ] Add images to posts
