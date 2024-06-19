@@ -15,7 +15,8 @@ The Tiny Web will operate on a freemium model, free to write text blogs with a s
 
 #### General
 - [x] Add markdown capability to the writing form
-- [ ] Adjust the size of the writing form
+- [x] Adjust the size of the writing form
+- [ ] Switch to a privacy first model. Collect as little information as possible.
 
 #### Users
 - [x] User Creation and Login
@@ -34,6 +35,7 @@ The Tiny Web will operate on a freemium model, free to write text blogs with a s
 - [x] Clicking a title should open the article
 - [X] Add a search bar
 - [ ] Add pagination to discover page
+- [ ] instead of author name on discover page, put a link back to the blog
 
 #### Subscribers
 - [ ] Add images to posts

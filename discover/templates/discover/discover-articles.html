@@ -14,7 +14,7 @@
     <ul>
         {% for article in AllArticles %}
             <li>
-                <h4><a href="{% url 'discover-article-detail' article.id %}"><span class="article-info">{{ article.created_at }} </span>    {{ article.title }} - Written by: {{ article.user.first_name }}</h4></a>
+                <h4><a href="{% url 'discover-article-detail' article.id %}"><span class="article-info">{{ article.created_at }} </span>    {{ article.title }} - Written by: {{ article.user.email }}</h4></a>
             </li>
 
 

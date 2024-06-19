@@ -5,7 +5,7 @@
 
 <h1>{{ article.title }}</h1>
 <p>{{ article.created_at }}</p>
-<p>By: {{ article.user.first_name }} {{ article.user.last_name }}</p>
+<p>By: {{ article.user.email }}</p>
 <hr>
 
 {{ article.formatted_markdown | safe }}

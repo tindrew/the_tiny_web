@@ -150,12 +150,13 @@ body {
 
  /****** Register Form ******/
 
- .register-form {
+  .register-form {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   margin: 0 auto;
   padding: 20px;
+  width: 60%;
 }
 
 .register-form h1 {
@@ -164,8 +165,8 @@ body {
 }
 
 .register-form label {
-  width: 100px;
-  display: inline-block;
+  width: 50%;
+  display: block;
   margin-bottom: 10px;
 }
 
@@ -185,6 +186,7 @@ body {
   padding: 10px 20px;
   border: none;
   cursor: pointer;
+  margin-top: 20;
 }
 
 .register-form input[type="submit"]:hover {
@@ -198,6 +200,13 @@ body {
 .register-form input[type="submit"]:focus {
   outline: none;
 }
+
+.register-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} 
+
 
 .create-article textarea {
   background-color: #e6e6e6;

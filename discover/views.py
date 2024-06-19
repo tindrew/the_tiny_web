@@ -20,8 +20,7 @@ def discover_articles(request):
     if query:
         article = Article.objects.filter(
             Q(title__icontains=query) | 
-            Q(content__icontains=query) |
-            Q(user__first_name__icontains=query)
+            Q(content__icontains=query) 
         ).distinct()
     else:
         article = Article.objects.all()
